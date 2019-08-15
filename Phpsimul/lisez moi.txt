@@ -1,0 +1,49 @@
+Cette version, la 1.3, peut etre installée en tant que mise à jour des autres version, 
+ou en version complète, il suffit de choisir le bon lien ci dessous ...
+
+Les nouveautés de la 1.3 :
+
+
+- Possibilité de choisir entre les options : base créée automatiquement, base à choisir (En installation complète, l'admin choisira lui même sa base)
+
+- L'administration est désormais indépendante du jeu
+
+- Dans le jeu vous voyez désormais le formulaire de contact en etant admin (Pour voir les messages, rendez vous dans le mod admin)
+
+- Une installation complète du jeu sera désormais plus esthétique, et facile grace au nouveau fichier d'installation
+
+- Le module Alliance a été completement refait,et ai maintenant optimisé, et sur templates (Et ben j'ai voulu refaire entierement le module alliance, et j'ai supprimer fichier par fichier, et ma version finale n'est pas prete du coup, j'ai plus de version du mod alliance fonctionnel, donc ca revient celui de la v12 sans templates, et sans rien, j'avait oublier que je l'avait optilisé a ce point pour la v1.3 ...)
+
+- Les barres concues par Zorbox & Nummi ont été ajoutées (Nous les remercions !)
+
+- La partie login a été completement recodée, avec mise en place de templates
+
+- Recodage du Mod Notes de Nummi avec sécurisation contre le hack, il est désormais impossible de supprimer/éditer/voir des notes appartenant à une autre personne
+
+- Module de Chat ajouté
+
+- Quelques ajout pour les combats, les boucliers, l'augmentation de la vitesse par des recherches
+
+- Recodage complet du mod affichant les productions, en prenant Atlantis DSV comme base
+
+- Résolution de quelques bugs ...
+
+
+
+Cette version peut être installée en tant que version complète ou mise a jour
+=> Pour une version complète, copiez le contenu du dossier installation sur votre FTP
+=> Pour une mise à jour, supprimez tous vos fichiers, en gardant les images et le style CSS de vos templates dans un coin (Seuls ces fichiers, car les fichiers de template eux meme, ont tellement changés, qu'il est devenu impossible de récupérer les anciens). Copiez ensuite le contenu de l'archive sur votre FTP, et configurez le fichier systeme/config.php (seulement la partie "Configuration SQL"). Renommez ensuite le fichier backup_v1.3.sql en backup.dsl et le fichier backup_v1.3.php en backup.php.
+
+Sachez qu'une autre version de la carte existe. Dans l'éditeur de menu, indiquez carte comme nom de module appelé. Ce module a été créer par Guerrier & Max485.
+
+Pour configurer le module allopass, éditez le fichier systeme/config_allopass.php. 
+
+Il est impossible de reprendre votre template existant dans cette version, dû au fait que tout à été modifié. Seules les images et le style pouront être récupérés.
+
+Pour acceder a l'administration, allez à l'adresse http://votresite/admin (pareil pour les modérateurs), il vous demande le nom d'utilisateur, le mot de passe, et un code, ce code est configurable dans le fichier config.php et permet une securité supplementaire pour acceder a l'administraton, si vous etes deja connecté sur le jeu, il n'est pas utile de le taper.
+Pour ajouter des admin / fondateur ou modo, vous devez vous rendre dans l'administration, et aller sur Gestion Staff, ensuite suivez les instructions.
+
+Le code de sécurité par défaut est : phpsimul . Il est modifiable dans systeme/config.php
+
+Lors d'une mise a jour, l'admin créé aura pour login => admin et pour pass => admin, nous vous conseillons de créer un autre compte et de supprimer celui la. Lors d'une install complete, le compte créer sera le meme que le compte utilisateur, nous vous conseillons de changer le mot de passe.
+Le faite d'avoir des compte independant, vous permet de pretez votre compte joueur pour sitting... sans avoir le soucis de la moderation 

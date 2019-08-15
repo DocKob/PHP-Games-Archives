@@ -1,0 +1,103 @@
+#header ul.buttons li a{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-header.png', sizingMethod='crop');
+}
+#header ul.buttons li a:hover{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-header-hover.png', sizingMethod='crop');
+}
+#header ul.buttons li.skull a,
+#header ul.buttons li.skull a:hover{
+	background:none;
+	filter:none;
+} 
+#main div.title h2 {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/title.png', sizingMethod='crop');
+}
+#main div.central-btn a{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-central.png', sizingMethod='crop');
+}
+#main div.central-btn-big a{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-central.png', sizingMethod='crop');
+}
+#main div.central-btn a:hover{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-central-hover.png', sizingMethod='crop');
+}
+#main div.central-btn-big a:hover{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-central-hover.png', sizingMethod='crop');
+}
+#main div.form ul.login li input.submit{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-login.png', sizingMethod='crop');
+}
+#main div.nav-guide a{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-prev.png', sizingMethod='crop');
+}
+#main div.nav-guide a:hover{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-prev-hover.png', sizingMethod='crop');
+}
+
+#main div.nav-guide a.nav-guide-next{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-next.png', sizingMethod='crop');
+}
+#main div.nav-guide a:hover.nav-guide-next{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-next-hover.png', sizingMethod='crop');
+}
+
+#main div.form ul.login li input.submit.hover{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-login-hover.png', sizingMethod='crop');
+}
+
+#main div.subscribe a {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-central.png', sizingMethod='crop');
+}
+
+#main div.subscribe a:hover {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-central-hover.png', sizingMethod='crop');
+}
+
+#main div.form-passwordlost div.world .center,
+#main div.form-reg .center{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/bg-reg-input.png', sizingMethod='crop');
+}
+
+#main div.form-passwordlost ul.password li div.bg,
+#main div.form-reg ul.login li div.bg{
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/bg-reg-input.png', sizingMethod='crop');
+}
+
+#main div.form-passwordlost input.submit,
+#main div.form-reg .buttonSubmit input.submit {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-reg.png', sizingMethod='crop');
+}
+
+#main div.form-passwordlost input.submit:hover,
+#main div.form-reg .right-col .buttonSubmit input.submit:hover {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='../images/login/btn-reg-hover.png', sizingMethod='crop');
+}
+
+#main div.form ul.login li input.submit{
+    scrollbar-face-color: expression(
+        onmouseover = function() {this.className += ' hover'},
+        onmouseout = function() {this.className = this.className.replace(/ hover/g, '')}
+    );
+}
+#footer ul li{
+	border: expression( (this===this.parentNode.childNodes[0]) ? "0" : "auto");
+}

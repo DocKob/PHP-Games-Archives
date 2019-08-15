@@ -1,0 +1,33 @@
+K 14
+bugtraq:number
+V 4
+true
+K 14
+tsvn:autoprops
+V 1023
+*.php = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/x-php
+*.sh = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/x-sh; svn:executable
+*.bmp = svn:mime-type =image/bmp
+*.gif = svn:mime-type =image/gif
+*.ico = svn:mime-type =image/ico
+*.jpeg = svn:mime-type =image/jpeg
+*.jpg = svn:mime-type =image/jpeg
+*.png = svn:mime-type =image/png
+*.zip = svn:mime-type =application/zip
+.htaccess = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/plain
+*.css = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/css
+*.html = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/html
+*.sql = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/x-sql
+*.txt = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/plain
+*.xml = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/xml
+*.xsd = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/xml
+LICENSE = svn:eol-style =native; svn:keywords ="Id"; svn:mime-type =text/plain
+K 15
+tsvn:logminsize
+V 2
+15
+K 20
+tsvn:projectlanguage
+V 4
+3079
+END

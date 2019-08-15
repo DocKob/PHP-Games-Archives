@@ -1,0 +1,16 @@
+	<tr>
+		<td>
+			{{nombre}}
+		</td>
+		<td>
+			<b><a class='voir_notes' onclick="document.location='?mod=notes/nvoir&note={{idnote}}';">
+			<span class='color_note_{{priority}}'>
+			{{sujet}}</a></b></span>
+		</td>
+		<td width='100'>
+			<input type='button' onclick="document.location='?mod=notes/nedit&note={{idnote}}';" value='Editer la note'>
+			<br>
+			<br>
+			<input type='button' onclick="document.location='?mod=notes/ndelete&note={{idnote}}';" value='Supprimer la note'>
+		</td>
+	</tr>

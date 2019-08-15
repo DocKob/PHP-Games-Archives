@@ -1,0 +1,59 @@
+BlackNova Traders - Readme
+
+BlackNova Traders is a web-based, multi-player space exploration game inspired by the popular BBS game of TradeWars. It is coded using PHP, SQL, and 
+Javascript.
+
+Version 0.55 / http://www.blacknova.net
+
+Copyright (C) 2000 Ron Harwood <harwoodr@blacknova.net>, L. Patrick Smallwood <thekabal@gmail.com>
+
+This program is free software; you can redistribute it and/or modify it under 
+the terms of the GNU Public License (see LICENSE or http://www.gnu.org/licenses/gpl.html)
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Public
+License for more details.
+
+Requirements: 
+    PHP4.2+ (tested with 4.22, 5.0)
+    MySQL (tested with 3.23.x, 4.1, 5.0)
+    Apache >= 1.3.10
+    a web-browser (doh!)
+
+    IIS is not supported, and BNT will not work correctly on it in future versions.
+
+Download:
+    You can get the newest version at http://blacknova.net
+
+Credits:
+    This work is based on the old BBS games that went by many names
+    (Tradewars, Galactic Warzone, Yankee Trader, Ultimate Universe, and
+    many other names like this) but shares no code with them.  It is
+    written 100% in PHP/HTML/SQL.  
+
+    Please refer to the docs/DEVCREDIT file to see
+    the current list of developers.
+
+Installation:
+    Please see the docs/INSTALL file.
+
+Upgrades:
+    As is typical with releases, we highly recommend a fresh install. Upgrades are not supported at this time.
+
+ChangeLog:
+    Please see the docs/CHANGES file.    
+
+Documentation:
+    See the docs/ directory.
+
+Updates:
+    Join the blacknova forums to stay informed about updates, patches 
+    and new releases.
+
+Enjoy,
+
+Ron Harwood <harwoodr@blacknova.net>
+
+PS:  I would appreciate both an e-mail (if you are running BlackNova
+Traders on your site) and a link back to the main blacknova site http://blacknova.net

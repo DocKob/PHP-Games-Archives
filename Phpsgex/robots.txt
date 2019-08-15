@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /adm/
+Disallow: /core-pages/
+Disallow: /docs/
+Disallow: /img/
+Disallow: /install/
+Disallow: /lang/
+Disallow: /plugins/
+Disallow: /templates/
+Disallow: /include/

@@ -1,0 +1,1 @@
+<img src='auth.php' alt='Image Verification'>

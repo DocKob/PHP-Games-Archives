@@ -1,0 +1,14 @@
+<!-- message_ecrire.html - Templates - Utile lorsqu'on ecrit des messages -->
+
+<a href="?mod=messagerie">Retour a la messagerie</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="?mod=bbcode">Voir BBCode existant</a>
+
+<h1><font color='FF0000'>{{status}}</font></h1>
+<form action='' method='post'>
+<table border=0>
+<tr><td>Destinataire : </td><td><input type='text' name='destinataire' value='{{destinataire}}'></td></tr>
+<tr><td>Titre : </td><td><input type='text' name='titre' value='{{titre}}'></td></tr>
+<tr><td>Message : </td></tr></table><textarea name='message' cols='50' rows='10'>{{message}}</textarea>
+<input type='hidden' name='postok' value='postok'>
+<br><input type='submit' value='Envoyer'>
+</form>

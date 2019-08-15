@@ -1,0 +1,117 @@
+.heure {
+	font-family: verdana;
+	font-size: 9px;
+	font-weight: normal;
+	color: #cccccc;
+	text-decoration: none;
+}
+.txt {
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #cccccc;
+	text-decoration: none;
+}
+.table45px {
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #cccccc;
+	text-decoration: none;
+	background-image: url(images/degrade45px.jpg);
+}
+.table16px {
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #cccccc;
+	text-decoration: none;
+	background-image: url(images/degrade16px.gif);
+}
+.bout_page_30px {
+	font-family: verdana;
+	font-size: 11px;
+	text-align:center;
+	height:20;
+	width:30;
+	font-weight: normal;
+	color: #cccccc;
+	text-decoration: none;
+	background-image: url(images/bout_forum_page_30px.gif);
+}
+.bout_page_40px {
+	font-family: verdana;
+	font-size: 11px;
+	text-align:center;
+	height:20;
+	width:40;
+	font-weight: normal;
+	color: #cccccc;
+	text-decoration: none;
+	background-image: url(images/bout_forum_page_40px.gif);
+}
+.tablebords {
+	border-width:thin;
+	border-color:#CCCCCC;
+	border-style:solid;
+}
+.gris {
+	color: #666666;
+}
+.rouge {
+	color: #FF0000;
+}
+body {
+	background-image: url(images/background.gif);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #CCCCCC;
+	text-decoration: none;
+	border-width:thin;
+	border-color:#CCCCCC;
+	border-style:solid;
+	background-image: url(images/back_form.gif);
+}
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #CCCCCC;
+	text-decoration: none;
+	border-width:thin;
+	border-color:#CCCCCC;
+	border-style:solid;
+	background-color: #333333;
+}
+a:link {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+a:visited {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+a:active {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.table_ss {
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}

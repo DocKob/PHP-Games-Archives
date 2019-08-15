@@ -1,0 +1,19 @@
+﻿Bienvenido %1$s,
+Gracias por registrarte en %2$s
+
+Antes de que podamos activar su cuenta, se necesita un paso más.
+Ten en cuenta que este paso es obligatorio para llegar a ser un usuario registrado. Tienes que ir al enlace de abajo sólo una vez para verificar su identidad.
+
+Con el fin de completar tu registro, por favor haz clic en el siguiente enlace para activar tu cuenta:
+
+<a href='%3$s?page=reg&amp;mode=valid&amp;pseudo=%1$s&amp;clef=%4$s'>%3$sindex.php?page=reg&amp;mode=valid&amp;pseudo=%1$s&amp;clef=%4$s</a>
+
+Tus datos:
+
+Usuario : %1$s
+Contraseña : %5$s
+
+En caso de estar frente a cualquier problema con el registro automatizado, por favor ponte en contacto con la administración de tu universo.
+
+Atentamente,
+%2$s - Team

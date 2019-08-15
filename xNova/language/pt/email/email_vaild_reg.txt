@@ -1,0 +1,19 @@
+﻿Olá %1$s,
+
+Obrigado por se registar no nosso jogo %2$s. Antes da sua conta ser activada e o teu registo concluído, ainda precisas de uma última etapa.
+
+Por favor note que este passo é absolutamente necessário para se tornares um usuário registado. Clique no link abaixo apenas uma vez para activar sua conta.
+
+Para completar o teu registo, clique no link: <a href='%3$s?page=reg&amp;mode=valid&amp;lang=%7$s&amp;clef=%4$s'>%3$s?page=reg&amp;mode=valid&amp;lang=%7$s&amp;clef=%4$s</a>
+
+Os seus detalhes de login:
+
+Nome de usuário: %1$s
+Senha: %5$s
+
+Se tiver problemas com o registo, entre em contacto com o webmaster ( Administração do jogo ) para este endereço de e-mail: <a href='mailto:%6$s'>%6$s</ a>
+
+
+Atenciosamente,
+
+Equipa - %2$s

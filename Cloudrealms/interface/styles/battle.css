@@ -1,0 +1,50 @@
+#battlecanvas
+{
+	width:70%;
+	height:500px;
+	position:absolute;
+	bottom:20%;
+	left:20%;
+	z-index:0;
+	background: #00AD28;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	border-bottom: #C26E00 solid 15px;
+}
+.node
+{
+	position:absolute;
+	width:100px;
+	height:40px;
+	color:#000;
+}
+.enemy
+{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#battlelog
+{
+	position:absolute;
+	z-index:99;
+	top:5px;
+	left:30%;
+	height:150px;
+	width:500px;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+#battlelog p
+{
+	background: url('../img/trans.png');
+	color: #fff;
+	width: 98%;
+	padding: 5px;
+	font-size: 14px;
+	margin: 3px;
+}

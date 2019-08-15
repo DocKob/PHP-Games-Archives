@@ -1,0 +1,57 @@
+<!-- DEBUT Modification des vos informations -->
+
+Vous pouvez modifier ici toutes les informations vous concernant. Vous devez entrer votre mot de passe au préalable afin de modifier vos informations.
+<br>
+<br>
+<form enctype='multipart/form-data' method='post' action='index.php?mod=profil2'>
+<table border='0'>
+
+<tr><td>Avatar:<br><a href="?mod=profil&ch=av", "1");'>Changer</a></td>
+<td align='center'><a href='?mod=avatars|{{userid}}'><img width='250px' src='{{useravatars}}'></a></td></tr>
+
+<tr><td>Mot de passe : </td><td><input type='password' name='pass1' size='20'></td></tr>
+<tr><td>Pseudo : </td><td><input type='text' name='nom' value='{{usernom}}' size='20'></td></tr>
+<tr><td>Adresse e-mail</td><td><input type='text' name='mail' value='{{usermail}}' size='20'></td></tr>
+<tr><td>Nouveau mot de passe : </td><td><input type='password' name='pass2' size='20'></td></tr>
+<tr><td>Retapez le nouveau mot de passe : </td><td><input type='password' name='pass3' size='20'></td></tr>
+
+<tr><td>Thème : </td><td>
+
+<select name='template'>
+
+{{select_theme}}
+
+</select></td></tr>
+
+<tr>
+<td>
+Type de Messagerie a utiliser : 
+</td>
+<td>
+<select name='messagerie_type'>
+
+<option {{selected_type1}} value='1'>Liste des titres</option>
+<option {{selected_type2}} value='2'>Liste des messages</option>
+
+</select>
+
+</td>
+</tr>
+<tr><td>Signature<br><a href="?mod=sign/createsign"><span class='lien_profils'>(Créer/Modifier l'image signature)</span></a>
+</td>
+<td>
+<TEXTAREA cols='50' rows='12'  type='text' name='signature' >{{signature}}</TEXTAREA></td></tr>
+
+<tr>
+<td>Supprimer mon compte (entrez SUPPRIMER suivi d'un espace 
+<br>
+et de votre pseudo exact pour le supprimer) ?
+</td>
+<td><input type='text' name='delete'>
+</td>
+</tr>
+
+</table>
+<br><input type='submit' value='Valider'></form>
+
+<!-- FIN Modification des vos informations -->

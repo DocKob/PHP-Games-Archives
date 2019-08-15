@@ -1,0 +1,7 @@
+Bienvenido %1$s,
+Gracias por registrate en %2$s
+
+Nos complace que hayas elegido a nuestra comunidad!
+
+Atentamente,
+%2$s - Team

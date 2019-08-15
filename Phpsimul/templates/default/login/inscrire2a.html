@@ -1,0 +1,91 @@
+
+
+
+<script>
+	var fichier_ajax = '../ajax.php'; // Emplacement du fichier contenant le PHP  demandé par Ajax
+</script>
+
+
+<!-- Formulaire d'inscription -->
+
+Pour vous inscrire, merci de remplir le formulaire suivant : 
+
+<br>
+<br>
+<font color='red'>{{erreur}}</font>
+<br>
+<form method='post' action='?mod=inscrire3'>
+
+<table>
+	<tr>
+		<td>
+			Pseudo : 
+		</td>
+		<td>
+			<input type='text' name='nom' value='{{postnom}}' size="30" 
+					id="login" onBlur="test_champ('nouveau_login', 'login', 'etat_login')"> 
+					<test_champ id="etat_login"></test_champ>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Avatar : 
+		</td>
+		<td>
+			<input type='text' name='avatar' size="30" value='{{postavatar}}'> (Aide <a href='index.php?mod=aideimgh'>Cliquez ici</a> - Facultatif)
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Adresse email : 
+		</td>
+		<td>
+			<input type='text' size="30" name='mail' value='{{postmail}}'
+					id="mailto" onBlur="test_champ('verif_mail', 'mailto', 'etat_mail')"> 
+					<test_champ id="etat_mail"></test_champ>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Mot de passe : 
+		</td>
+		<td>
+			<input type='password' size="30" name='pass1' >
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Répétez le mot de passe : 
+		</td>
+		<td>
+			<input type='password' size="30" name='pass2'>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Race : 
+		</td>
+		<td>
+			<select name='race'>
+			{{selectraces}}
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Vérification : 
+		</td>
+		<td>
+			<div id="image"><img src='auth.php' id="image_de_verif" alt='Image de verification' title='Image de verification'></div>
+			Ecrire le texte que vous voyez. S'il n'apparait pas, 
+				<a style="cursor: pointer;" onclick="actualiser_image_verif('image_de_verif', 'auth.php');">Actualiser l'image</a>.
+			<br>
+			<input id='imagever' size="30" name='imagever' type='text' value='{{postimage}}'>
+		</td>
+	</tr>
+</table>
+
+<input type='submit' value='Inscription'>
+
+</form>
+

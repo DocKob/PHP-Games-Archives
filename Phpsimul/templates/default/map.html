@@ -1,0 +1,70 @@
+<!-- Bienvenue dans la Galaxie -->
+
+<!-- Les lien inactifs, peuvent etre personnalisé par le CSS -->
+<!-- Les liens sont dans la classe: 'inactif' -->
+<!-- Les inactif de 7 jours dans 'inactif1' -->
+<!-- Les inactif de 30 jours dans 'inactif2' -->
+
+
+<center>
+
+<style>.bouton_galaxie { text-decoration: none ; } </style>
+
+<form action='?mod=map' method='post'>
+Coordonnées : 
+<table border='0'>
+{{affichage_boutton_changement_galaxie_si_actif}}
+
+	<tr>
+		<td>
+			<input type='button' value='<-' onclick="document.location='?mod=map|{{ordre_1}}|{{ordre_2-1}}';">
+			<input type='text' size='3' name='ordre_2' value='{{ordre_2}}'>
+			<input type='button' value='->' onclick="document.location='?mod=map|{{ordre_1}}|{{ordre_2+1}}';">
+		</td>
+	</tr>
+</table>
+<br>
+<input type='submit' value='Valider'>
+</form>
+
+<br>
+<br>
+
+<!-- On affiche les planetes se trouvant dans le systeme demander -->
+<table border='1' width='50%'>
+	<tr align='center'>
+		<td align='center' width="4%"><b>N°</b></td>
+		<td align='center' width="6%"><b>Vue</b></td>
+		<td align='center' width="20%"><b>Nom</b></td>
+		<td align='center' width="20%"><b>Occupant</b></td>
+		<td align='center' width="20%"><b>Avatar</b></td>
+	</tr>
+
+{{affichage_joueurs}}
+
+
+</table>
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

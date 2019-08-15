@@ -1,0 +1,7 @@
+<div class="navigation-node">
+  <p class="title"><?php echo $this->escape($this->getTitle())?></p>
+  <?php foreach ($this->getAllPartials() as $name => $partial):?>
+    <?php echo $partial->render()?>
+  <?php endforeach?>
+  <span class="last"></span>
+</div>

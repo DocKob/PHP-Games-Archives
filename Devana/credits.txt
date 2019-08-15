@@ -1,0 +1,8 @@
+Devana created by Andrei Busuioc - http://devana.eu
+
+This project uses images from the following sources:
+- resource, technology and building images courtesy of the open source game "0AD" - http://play0ad.com/
+- component and unit images courtesy of the open source game "The Battle for Wesnoth" - http://www.wesnoth.org/
+- map images courtesy of http://www.pixeltemple.com/portfolio/isometric-icons/
+
+This project uses the "PHPMailer" class from http://phpmailer.sourceforge.net

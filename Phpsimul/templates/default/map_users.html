@@ -1,0 +1,20 @@
+<!-- Affichage des joueurs -->
+
+	<tr align='center'>
+		<td align='center' width="4%">
+			{{numero}}
+		</td>
+		<td align='center' width="6%">
+			<img width='75px' src='templates/{{theme}}/images/bases/{{imagebasedujoueur}}.gif'>
+		</td>
+		<td align='center' width="20%">
+			<a title="Envoyer une flotte" class="lien" onclick="document.location='?mod=unites&c1={{ordre1joueur}}&c2={{ordre2joueur}}&c3={{ordre3joueur}}';">{{nomjoueur}}</a>
+		</td>
+		<td align='center' width="20%">
+			<a title="Ecrire un message" href="?mod=ecrire&destinataire={{nom_occupant}}">{{nom_occupant}} {{status_inactif}} </a>
+		</td>
+		<td align='center' width="20%">
+			<a title="Voir l'avatar en plus grand" href="?mod=avatars|{{id_occupant}}"><img width="75px" src="{{avatar_occupant}}"></a>
+		</td>
+	</tr>
+

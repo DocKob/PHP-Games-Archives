@@ -1,0 +1,126 @@
+.lien {
+	text-decoration:none;
+	color: #FF8040;
+	font-weight: bold;
+}
+.lien:hover {
+	text-decoration:underline;
+	color: #FF8040;
+	font-weight: bold;
+}
+textarea{
+	background-color:#88A2B7;
+	text-align:left;
+	border:1px solid #000000;
+	width:220px;
+	height:80px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+input{
+	border:1px solid #000000;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	background-color:#88A2B7;
+}
+
+input.valid{
+	text-align:center;
+	cursor:pointer;
+	border:1px solid #000000;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	background-color:#88A2B7;
+}
+div.inputText{
+	background-color : #395666;
+	border: 1px #FF0000 solid;
+	padding-bottom:10px;
+	width:700px;
+	text-align:center;
+}
+div.logo{
+	background-color : #395666;
+	background:url(fond1.png) top left repeat-x;
+	padding:0px;
+	width:700px;
+	text-align:center;
+}
+div.resultat{
+	background-color:#D5D5FF;
+	padding-top:10px;
+	padding-left:50px;
+	width:100%;
+	text-align:left;
+}
+table.batiments{
+	border :0px;
+	border-spacing : 0px;
+	padding : 0px;
+	margin : 0px;
+}
+td.titaneTitre{
+	text-decoration:underline;
+}
+td.titane{
+	text-align:center;
+}
+td.carboneTitre{
+	text-decoration:underline;
+}
+td.carbone{
+	text-align:center;
+}
+td.tritiumTitre{
+	text-decoration:underline;
+}
+td.tritium{
+	text-align:center;
+}
+td.centraleGeoTitre{
+	text-decoration:underline;
+}
+td.centraleGeo{
+	text-align:center;
+}
+.choixstyle{
+	position : absolute;
+	top : 170px;
+	left:200px;
+	clip:rect(0,730,360,0);
+	width:730px;
+	height:360px;
+	z-index: 2;
+	visibility : hidden;	
+}
+.choixstyle_corps{
+	overflow: auto;
+	background-color:#436476;
+	border:2px solid #000000;
+	width:700;
+	height:310;
+	font-weight:bold;
+}
+.choixstyle_bouton{
+	background-color:#395666;
+	background:url(fond1.png) top left repeat-x;
+	border-left:2px solid #000000;
+	border-right:2px solid #000000;
+	border-top:2px solid #000000;
+	width:700;
+	height:20;
+	font-weight:bold;
+}
+.choixstyle_bouton2{
+	background-color:#395666;
+	background:url(fond1.png) top left repeat-x;
+	border-left:2px solid #000000;
+	border-right:2px solid #000000;
+	border-bottom:2px solid #000000;
+	width:700;
+	height:20;
+	font-weight:bold;
+}

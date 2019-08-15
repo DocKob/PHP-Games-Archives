@@ -1,0 +1,259 @@
+a {
+	color: #003366;
+	text-decoration: underline;
+}
+a:hover {
+	color: #FF9900;
+}
+
+input, textarea {
+	background-color: #FFFFFF;
+	color: #006699;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	border: 1px solid #808080;
+	padding: 2px 2px 2px 2px;
+	vertical-align: middle;
+}
+
+select {
+	background-color: #FFFFFF;
+	color: #006699;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	border: 1px solid #808080;
+	text-indent: 2px;
+}
+
+legend  {
+	padding: 0.2em 0.5em;
+	border: 1px solid #808080;
+	font-size:90%;
+	text-align:right;
+	font-weight: bolder;
+}
+
+fieldset {
+	padding: 1em;
+	border: 1px solid #808080;
+}
+
+#frmConnex label  {
+	width:50%;
+	margin-right:0.5em;
+	font-weight:bold;
+	float:left;
+	text-align:right;
+}
+
+#frmConnex input {
+	vertical-align: baseline;
+}
+
+#frmDelete {
+	margin-left: auto;
+	text-align:center;
+}
+
+#frmChangeLang {
+	text-align:right;
+	margin-right: 2px;
+}
+
+#divContainer {
+	background-color: #FFFFFF;
+	background-image: url(mysql.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	width: 650px;
+	position: absolute;
+	left: 50%;
+	margin-left: -325px;
+	margin-top: 20px;
+	border: 2px solid #808080;
+	padding: 20px;
+}
+
+#frmRestore {
+	text-align: center;
+	margin-left: 125px;
+	width: 400px;
+}
+
+
+#divTitle {
+	width:100%;
+	font-size: 12px;
+	font-weight: bolder;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#tdEntryConnex {
+	text-decoration: underline;
+}
+
+#txtProgress {
+	width: 644px;
+}
+
+
+#divAdvertise {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border: 1px solid #808080;
+	text-align: center;
+}
+
+#divAdvertise.wait {
+	background-color: #FFEAA8;
+}
+
+#divAdvertise.done {
+	background-color: #DFFFDF;
+}
+
+#divIncompatible {
+	background-color: #FFCCCC;
+	padding: 7px;
+	border: 2px dotted #990000;
+	width: 400px;
+	margin-left: 125px;
+	margin-bottom: 40px;
+}
+
+
+#divBack {
+	text-align: center;
+	margin-top: 25px;
+}
+
+#divCopyrights {
+	text-align: center;
+	color: #003366;
+	font-size: 9px;
+	font-weight: bolder;
+}
+
+#divTablesBlock {
+	float: left;
+	width: 48%;
+}
+
+#divTablesBlock label  {
+	text-align:left;
+}
+
+#divTablesBlock legend  {
+	padding: 0.2em 0.5em;
+	border: 1px solid #808080;
+	font-size:90%;
+	text-align:left;
+	font-weight: bolder;
+}
+
+
+#divOptionsBlock {
+	float: right;
+	text-align: left;
+	width: 48%;
+}
+
+#divOptionsBlock legend  {
+	padding: 0.2em 0.5em;
+	border: 1px solid #808080;
+	font-size:90%;
+	text-align:left;
+	font-weight: bolder;
+}
+
+#divOptionsBlock label  {
+	text-align:left;
+}
+
+#divProgressBarTxt {
+	text-align:center;
+	width:400px;
+	margin-left: 125px;
+}
+#tblProgressBar {
+	width:400px;
+	border: 1px solid #808080;
+	height:30px;
+	padding:0;
+	margin-left: 125px;
+	margin-bottom: 40px;
+}
+
+#tdProgressBarLeft {
+	background-color:#C9C9C9;
+	height:20px;
+}
+
+#tdProgressBarRight {
+	background-color:white;
+	height:20px;
+}
+
+.error {
+	color: #FFFFFF;
+	background-color: #FF0000;
+	font-size: 11px;
+	font-weight: bolder;
+	text-align: center;
+}
+.ok {
+	color: #FFFFFF;
+	background-color: #00B058;
+	font-size: 11px;
+	font-weight: bolder;
+	text-align: center;
+}
+.centered {
+	margin-left: auto;
+	text-align: center;
+}
+.cleaner {
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+.noborder {
+	border: 0;
+}
+
+.small {
+	font-size: 9px;
+	font-weight: normal;
+}
+
+.bolder {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.title {
+	font-weight: bolder;
+	text-decoration: underline;
+	margin-bottom: 3px;
+}
+
+.row0 {
+	background-color: #FCFCFC;
+}
+
+.row1 {
+	background-color: #FFFFFF;
+}
+
+.row0:hover, .row1:hover {
+	background-color: #EDEDED;
+}

@@ -1,0 +1,119 @@
+body {
+  background-color: E6E6FA; 
+  color: 000080; 
+  font-family: "Cambria";
+}
+
+a {
+    color: 8A2BE2;
+}
+
+a:hover {
+    color: 808000;
+}
+
+img {
+    border: 0px;
+}
+
+
+
+.infobulle
+{
+	position: absolute;	
+	visibility : hidden;
+	border: 1px solid Black;
+	padding: 10px;
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	background-color: #FFFFCC;
+}
+
+.inactif1{
+	color: red;
+}
+
+.inactif2{
+	color: red;
+}
+
+.url_in_classement{
+	color: #000000;
+	text-decoration: none;
+}
+
+.color_note_high
+{
+color: red;
+}
+
+.color_note_medium
+{
+color: black;
+}
+
+.color_note_low
+{
+color: green;
+}
+
+.lien_dans_vprofils
+{
+color: #000000;
+}
+
+.abandon_colonie
+{
+text-decoration: underline overline;
+color: red;
+}
+
+.lien_profils
+{
+text-decoration: none;
+color: #CC9900;
+}
+
+.overview_color_heure
+{
+font-weight:bold;
+color: 6495ED;
+}
+
+
+.deja_construit 
+{ 
+color: green;
+}
+
+.a_obtenir 
+{ 
+color: red;
+}
+
+.color_requierement 
+{
+color: blue;
+}
+
+.voiralli 
+{ 
+text-decoration: none; 
+}
+
+.frame
+{
+visibility: hidden;
+}
+
+.voir_notes 
+{ 
+text-decoration: none; 
+color: orange;
+cursor: pointer;
+}
+
+.lien
+{
+cursor: pointer;
+}

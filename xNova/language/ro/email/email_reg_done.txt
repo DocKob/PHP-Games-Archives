@@ -1,0 +1,7 @@
+Salut %1$s,
+Multumesc pentru inregistrare in %2$s
+
+Ne bucuram ca ai ales sa faci parte din aceasta comunitate si iti uram distractie placuta!
+
+Salutari,
+%2$s - Team

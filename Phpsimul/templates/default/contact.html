@@ -1,0 +1,14 @@
+<div align="center">
+<h1><font color="1E90FF">Formulaire de Contact</font></h1>
+<form action="index.php?mod=contact" method="post">
+<input type="hidden" name="pseudo" value="{{pseudo}}">
+<h3><font color="FF0000">Votre E-Mail :</font></h3>
+<h5><font color="FFA500">Si vous desirez une reponse a votre message, alors merci de laissez votre adresse e-mail</font></h5>
+<input type="text" name="mail" maxlength="100" size="50" value="{{mail}}">
+<br><br>
+<h3><font color="FF0000">Votre message :</font></h3>
+<textarea rows="10" cols="100" name="message">{{message}}</textarea><br>
+<input type="hidden" name="formcontact" value="formcontact">
+<input type="submit" value="Envoyer" />
+</form>
+</div>

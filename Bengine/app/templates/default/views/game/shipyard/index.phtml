@@ -1,0 +1,118 @@
+<form method="post" action="{@orderAction}" class="form-sec">
+<table class="ntable">
+	<thead>
+		<tr>
+			<th colspan="2">{@shipyard}</th><th>{lang}QUANTITY{/lang}</th>
+		</tr>
+		<?php if(Core::getConfig()->get("SCRAP_MERCHANT_RATE") > 0): ?>
+		<tr>
+			<td colspan="3" class="center"><a href="<?php echo Link::url("game/".SID."/Shipyard/Merchant") ?>">{lang=GO_TO_MERCHANT}</a></td>
+		</tr>
+		<?php endif ?>
+	</thead>
+	<?php if($this->get("canBuildUnits")): ?>
+	<tfoot>
+		<tr>
+			<td colspan="3"><input type="submit" name="sendmission" value="{lang}COMMIT{/lang}" class="button" /></td>
+		</tr>
+	</tfoot>
+	<?php endif ?>
+	<tbody>
+		<?php foreach($this->getLoop("units") as $unit): ?>
+		<?php $id = $unit->get("buildingid") ?>
+		<?php if(Game::canBuild($id)): ?>
+		<tr>
+			<td>
+				<?php $image = Image::getImage("buildings/".$unit->get("name").".gif", $unit->getName(), 120, 120) ?>
+				<?php echo Link::get("game/".SID."/Unit/Info/".$id, $image); ?>
+			</td>
+			<td style="vertical-align:top;">
+				<?php echo $unit->getLinkName() ?>
+				<?php if($unit->get("quantity") > 0): ?>(<?php echo sprintf(Core::getLang()->get("SHIPS_EXIST"), fNumber($unit->get("quantity"))) ?>)<?php endif ?>
+				{perm[CAN_EDIT_CONSTRUCTIONS]}<?php echo $unit->getEditLink(); ?>{/perm}<br />
+				<?php echo $unit->getDescription() ?><br/>
+				{lang}REQUIRES{/lang}
+				<?php if($metal = $unit->get("basic_metal")): ?>
+				{lang=METAL}: <?php echo fNumber($metal) ?>
+				<?php endif ?>
+				<?php if($silicon = $unit->get("basic_silicon")): ?>
+				{lang=SILICON}: <?php echo fNumber($silicon) ?>
+				<?php endif ?>
+				<?php if($hydrogen = $unit->get("basic_hydrogen")): ?>
+				{lang=HYDROGEN}: <?php echo fNumber($hydrogen) ?>
+				<?php endif ?>
+				<?php if($energy = $unit->get("basic_energy")): ?>
+				{lang=ENERGY}: <?php echo fNumber($energy) ?>
+				<?php endif ?>
+				<br/>
+				{lang}PRODUCTION_TIME{/lang} <?php echo $unit->getProductionTime(true) ?>
+			</td>
+			<td>
+				<?php if($id == 49 && Game::getEH()->hasSmallShieldDome() || $id == 50 && Game::getEH()->hasLargeShieldDome()): ?>
+				{lang=ALREADY_BUILDED}
+				<?php elseif($unit->get("quantity") > 0 && ($id == 49 || $id == 50)): ?>
+				{lang=ALREADY_BUILDED}
+				<?php elseif(($id == 51 || $id == 52) && !$this->get("canBuildRockets")): ?>
+				{lang=ROCKET_STATION_FULL}
+				<?php elseif($unit->hasResources() && $this->get("canBuildUnits") && !Core::getUser()->get("umode")): ?>
+				<input type="text" name="<?php echo $id ?>" value="0" size="3" maxlength="4" class="center"/>
+				<?php endif ?>
+			</td>
+		</tr>
+		<?php endif ?>
+		<?php endforeach ?>
+	</tbody>
+</table>
+</form>
+<?php if(count($this->getLoop("events"))): ?>
+<div class="idiv">
+{lang}CURRENTLY_IN_WORK{/lang}<br />
+{@currentWork} <span id="shipyardCountDown"><?php echo getTimeTerm($this->get("remainingTime")) ?></span>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+	var title = $("title");
+	var orgTitleText = title.text();
+	$('#shipyardCountDown').countdown({until: "<?php echo $this->get("remainingTime") ?>", compact: true, onExpiry: function() {
+		notify("{lang=SHIPYARD_FINISHED}", "{lang=SHIPYARD_FINISHED_TEXT}", "{@currentMissionImage}", "<?php echo Link::url("game/".SID."/Shipyard") ?>");
+		title.text("{lang=COMPLETED} - " + orgTitleText);
+		$('#shipyardCountDown').html('{lang=COMPLETED}');
+	}, onTick: function(period) {
+		if(period[0] > 0 || period[1] > 0 || period[2] > 0 || period[3] > 0)
+		{
+			return true;
+		}
+		title.text(pad(period[4], 2) + ":" + pad(period[5], 2) + ":" + pad(period[6], 2) + " - " + orgTitleText);
+	}});
+	function checkBeforeAbort()
+	{
+		if(document.getElementById("shipyard-events").selectedIndex < 0)
+		{
+			alert("{lang=CHOOSE_SHIPYARD_ORDER}");
+			return false;
+		}
+	}
+	//]]>
+</script>
+<form action="{@cancelAction}" method="post" onsubmit="return checkBeforeAbort();">
+	<table class="ntable">
+		<tr>
+			<th>{lang}OUTSTANDING_MISSIONS{/lang}</th>
+		</tr>
+		<tr>
+			<td class="center">
+				<select name="shipyard_events[]" size="10" multiple="multiple" style="width: 300px;" id="shipyard-events">
+					<?php foreach($this->getLoop("events") as $event): ?>
+						<option value="<?php echo $event->getId() ?>"><?php echo $event->getData("quantity") ?>x <?php echo Core::getLanguage()->get($event->getData("mission")) ?></option>
+					<?php endforeach; ?>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="center">
+				<input type="submit" class="button" value="{lang=ABORT}" onclick="return confirm('{lang=CONFIRM_SHIPYARD_ABORT}');"/>
+			</td>
+		</tr>
+	</table>
+</form>
+<?php endif; ?>

@@ -1,0 +1,21 @@
+<h1>{lang}User_Manager{/lang}</h1>
+<div class="draggable">
+	<form method="post" action="{const=BASE_URL}admin/user/seek">
+		<table class="ntable" cellpadding="4" cellspacing="0">
+			<thead>
+				<tr>
+					<th colspan="2">{lang}Quick_Search{/lang}</th>
+				</tr>
+			</thead>
+			<tr>
+				<td><label for="s_username">{lang}Username{/lang}</label><br />[<?php echo Link::get("admin/user/seek", Core::getLanguage()->get("Advanced_Search")); ?>]</td>
+				<td><input type="text" name="username" maxlength="128" id="s_username" /></td>
+			</tr>
+			<tfoot>
+				<tr>
+					<td colspan="2"><input type="submit" name="search_user" value="{lang}Go{/lang}" class="button" /></td>
+				</tr>
+			</tfoot>
+		</table>
+	</form>
+</div>

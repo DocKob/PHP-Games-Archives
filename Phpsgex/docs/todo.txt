@@ -1,0 +1,37 @@
+/* --------------------------------------------------------------------------------------
+                                      TO-DO-LIST FILE
+   Credits         : phpSGEx by Aldrigo Raffaele
+   Last modified by: raffa50 20.03.2014
+-------------------------------------------------------------------------------------- */
+
+- admin cp
+	- warn user
+	
+- more profile fields
+
+- ADD MAX BUILDING QUEUE LENGHT
+
+- UPDATE LANGUAGES (unassigned)
+	- update lang/nl.php (use lang/en.php as template)
+	- update lang/ru.php (use lang/en.php as template)
+
+- UPDATE BUILDING/RESEARCH/UNIT IMAGES (unassigned)
+	- update building images (use from disciples 2 but make them cool same-size)
+	- update unit images (use from disciples 2 but make them cool and same-size)
+	- update research images (use from disciples 2 but make them cool and same-size)
+	- update resource icons (use from disciples 2 but make them cool and same-size)
+	- make all images same format (.jpg is best i think)
+	- apply image changes to sql install file
+
+- ADD CODE FOR GRAPHICAL BUTTONS (unassigned)
+	- update Map (use graphical buttons)
+	- update Market (use graphical buttons)
+	- update Alliance (use graphical buttons)
+
+/* --------------------------------------------------------------------------------------
+                                      CONTACT
+   Sourceforge Project Page : http://sourceforge.net/projects/phpstrategygame/
+   Sourceforge Project Forum: http://phpstrategygame.sourceforge.net/
+
+   Enjoy and please report any bugs to the forum - thank you!
+-------------------------------------------------------------------------------------- */

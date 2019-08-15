@@ -1,0 +1,67 @@
+<?
+///////////////////////////////////////////////////////////////////////////////////
+// cloudRealms Web MMORPG Game Engine                                             /
+// Description: cloudRealms is a web based game engine that allows game           /
+// developers to easily design and deploy 2D web based social MMORPG games.       /
+///////////////////////////////////////////////////////////////////////////////////
+// Distributor: Verdis Technologies                                               /
+// Website: www.verdisx.com                                                       / 
+///////////////////////////////////////////////////////////////////////////////////
+// Author: Ronald A. Richardson                                                   /
+// Website: www.ronaldarichardson.com                                             /
+// Email: theprestig3@gmail.com                                                   /
+///////////////////////////////////////////////////////////////////////////////////
+// File: globals.php                                                              /
+// Modified: 6/13/2011                                                            /
+///////////////////////////////////////////////////////////////////////////////////
+// This file is part of cloudRealms.                                              /
+//                                                                                /
+// cloudRealms is free software: you can redistribute it and/or modify            /
+// it under the terms of the GNU Affero General Public License as published by    /
+// the Free Software Foundation, either version 3 of the License, or              /
+// (at your option) any later version.                                            /
+//                                                                                /
+// cloudRealms is distributed in the hope that it will be useful,                 /
+// but WITHOUT ANY WARRANTY; without even the implied warranty of                 /
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                  /
+// GNU Affero General Public License for more details.                            /
+//                                                                                /
+// You should have received a copy of the GNU Affero General Public License       /
+// along with cloudRealms.  If not, see <http://www.gnu.org/licenses/>.           /
+///////////////////////////////////////////////////////////////////////////////////
+
+$basedir = dirname(__FILE__).'/';
+$basedir = substr($basedir, 0 , -9);
+$url = "http://" . $_SERVER['HTTP_HOST']  . $_SERVER['REQUEST_URI'];
+$urldir = substr($url, 0, -20);
+$urldir = $url;
+/// DATABASE CONFIG BELOW //////////////////////////
+$db_host = ''; // Enter your database server
+$db_user = ''; // Enter the database user
+$db_pass = ''; // Enter the database password
+$db_name = ''; // Enter the name of your database
+
+$globalcon = mysql_pconnect($db_host, $db_user, $db_pass);
+mysql_select_db($db_name);
+// code to grab game data
+$grabGame = mysql_query("SELECT * FROM game") or die (mysql_error());
+while($row = mysql_fetch_array($grabGame))
+{
+	$game_name = $row[name];
+	$game_expansion = $row[expansion];
+	$game_description = $row[description];
+	$game_logo = $row[logo];
+	$game_domain = $row[domain];
+	$canvas_width = $row[canvas_width];
+	$canvas_height = $row[canvas_height];
+	$tile_width = $row[tile_width];
+	$mp3_theme = $row[mp3_theme];
+	$ogg_theme = $row[ogg_theme];
+	$tile_height = $row[tile_height];
+	$fullscreen = $row[fullscreen];
+}
+$version = '1.0';
+// Grab user options
+// windows theme dark or light (black and white)
+// font color
+?>

@@ -1,0 +1,47 @@
+-> Devana 2 beta 1 - 11.08.2013
+Transactions now also operate on controllers instead of only specific model methods.
+Switched to SHA1 hashing for user passwords.
+Blacklisting of IPs and emails is now possible.
+Users can now blacklist other users and thus not receiving messages from them anymore.
+I've implemented refunds (as a percentage of the initial cost and all of the required items) when destroying modules, units or components.
+A new module (building) type has been added. It increases resource storage values.
+Modules now have an "outputResource" attribute that tells the game what resource they will produce, instead of the old method of having  "module" attribute associated with each resource. This allows resources to be produced from different modules.
+Modules now have one the following attributes: "technologies", "components", "units". This allows technologies, components and units to be produced at different modules.
+Alliances have been implemented. User will be able to attack each other only if they are part of an alliance and at war with the alliance of the user they plan to attack. Peace is the default state. After declaring a war, both involved parties must agree to a peace proposal to revert back to the peace state.
+The combat system is up and running.
+Units now have classes which allow them to deal more/less damage to other classes.
+Nodes (towns) can be conquered after winning a battle and defeating all defending units.
+Various bug fixes.
+
+-> Devana 2 alpha 3 - 31.03.2013
+Email activation is now an optional feature.
+
+-> Devana 2 alpha 3 - 21.03.2013
+The reset password feature now has a 15 minute cooldown.
+Added new message count in top menu.
+Added the option to delete inactive accounts to the admin panel based on their inactive period.
+
+-> Devana 2 alpha 3 - 15.03.2013
+Bug fixes.
+Added minigrid to grid view.
+
+-> Devana 2 alpha 3 - 05.03.2013
+Added combat simulator.
+Improved node view for all factions.
+
+-> Devana 2 alpha 2 - 24.02.2013
+You can now  research technologies, craft components and train units.
+In game messaging system has been implemented.
+The game can now send account activation and password reset emails via the use of PHPMailer.
+The "sitter" option has returned. This allows you to login to a friend's account, that has set you
+ as a sitter, and manage his stuff while he's away.
+Various bug fixes and code tweaks.
+Game resource costs, production and storage values have been increased to
+ allow for a more fast paced system.
+
+-> Devana 2 alpha 1 - 04.01.2013
+basic foundation code (user registration & login; admin panel);
+new game variables to easily turn on/off the main game features (research, build, craft, train, trade);
+new map view icons;
+a working economy (creating buildings and generating resources);
+"devanapedia", a place to view all game assets and their attributes.

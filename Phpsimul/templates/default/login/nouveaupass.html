@@ -1,0 +1,17 @@
+<!-- Changement de pass -->
+
+Votre mot de passe etant crypté dans notre base de données, 
+<br>il est impossible de le recuperer, il va donc être changé si vous accepter
+
+<br>
+<br>
+
+Merci d'entrer votre adresse email.
+<br>
+<br>
+<font color='red'>{{erreur}}</font>
+<form method='post' action='?mod=nouveaupass'>
+<input type='text' name='mail' size='50' value='{{mail}}'>
+<br>
+<input type='submit' value='Continuer'>
+</form>

@@ -1,0 +1,50 @@
+<!-- Formulaire de connexion -->
+
+Pour vous logguer, merci d'indiquer votre pseudo et votre mot de passe.
+
+<br>
+<br>
+
+<form method='post' action='?mod=login'>
+<table>
+	<tr>
+		<td>
+			Pseudo :
+		</td>
+		<td>
+			<input type='text' name='nom'>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Mot de passe : 
+		</td>
+		<td>
+			<input type='password' name='pass'>
+		</td>
+	</tr>
+</table>
+
+<input type='submit' value='Connection'>
+</form>
+
+
+<font size='-2'>
+<a href='index.php?mod=inscrire1'>Inscription</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='index.php?mod=nouveaupass'>Mot de passe oublié ?</a>
+</font>
+
+<br>
+<br>
+
+<style>
+.inscrit_total 
+{ 
+text-decoration: underline overline; 
+color: red ;
+}
+</style>
+
+<span class='inscrit_total'>
+<font size='-1'><b>Nombre d'inscrit : {{inscrit_total}}</b></font></span>

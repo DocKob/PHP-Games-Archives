@@ -1,0 +1,18 @@
+/* --------------------------------------------------------------------------------------
+                                      VERSION FILE
+   Credits         : phpSGEx by Aldrigo Raffaele
+   Last modified by: raffa50 31.03.2016
+-------------------------------------------------------------------------------------- */
+
+v 2.0.3.0
+
+- fix research lab & researches
+- fix create ally
+- removed $user object saved to session, now each time the user object is built with new LoggedUser( $_SESSION['user_id'] ), $_SESSION['user_id'] is the user->id
+
+/* --------------------------------------------------------------------------------------
+                                      CONTACT
+   Sourceforge Project Page : http://sourceforge.net/projects/phpstrategygame/
+
+   Enjoy and please report any bugs to the Bug Tracker - thank you!
+-------------------------------------------------------------------------------------- */

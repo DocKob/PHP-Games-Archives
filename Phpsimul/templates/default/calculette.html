@@ -1,0 +1,36 @@
+<center>
+
+<table border='2' cellpadding='4' cellspacing='0' width='100%'> 
+	<tr> 
+		<td style='text-align: center;'>
+			<h1>La Calculette</h1><br>
+
+			<form onSubmit="return false; calc();" method='post'> 
+
+			<input type='text' id="number1" name='number1'>
+
+			<select name='signe' id="signe"> 
+			        <option value='+'>+</option> 
+			        <option value='-'>-</option> .
+			        <option value='x'>x</option> 
+			        <option value='/'>/</option> 
+			</select> 
+
+			<input type='text' id="number2" name='number2'> 
+
+			<input type='hidden' name='formgo' value='cal2'>
+
+			<input type='submit' value='Valider' onClick="calc();">
+
+			</form>
+
+			<!-- Affichage de la reponse du calcule -->
+			<champ_reponse id="rep"></champ_reponse>
+			
+		</td>
+	</tr>
+</table>
+
+<!-- Mod calculette devloppé par Terreur, optimisé par Max485 -->
+
+

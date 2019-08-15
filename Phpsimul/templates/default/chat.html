@@ -1,0 +1,31 @@
+
+<div style="overflow: auto;">
+	<table border="3" width="500" height="300">
+		<tr>
+			<td>
+				<table id="messages">
+						{{messages}}
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<script>
+	setTimeout('chat(0)', 10000); // On actualise les messages du Chat toutes les 10 secondes
+</script>
+
+
+<br>
+
+<form onSubmit="return false; chat(1);">
+	<select name='type' id="type">
+		<option value='0'>Global</option>
+		<option value='1'>Alliance</option>
+	</select>
+	&nbsp;
+	<input type='text' name='message' id="message" >
+	&nbsp;
+	<input type='submit' value='OK' onclick="chat(1)"> <!-- Lors d'un envoye de message on passe par Ajax, ce qui permet d'envoyer le message et de recevoir les nouveau messages -->
+</form>

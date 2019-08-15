@@ -1,0 +1,54 @@
+<center>
+
+<a href="?mod=notes/note"><b>Retour</b></a>
+
+<h2>Créer une nouvelle note : </h2>
+
+
+<font size='+2' color='red'><b>{{error}}</font></b>
+
+</center>
+
+
+<form method='post' action='?mod=notes/nnote'>
+
+<table>
+	<tr>
+		<td>
+			Sujet : 
+		</td>
+		<td>
+			<input type='text' value='Sujet du message' 
+					 onFocus=\"if (this.value=='Sujet du message') {this.value=''}\" 
+					 name='sujet' size='67'>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Priorité : 
+		</td>
+		<td>
+			<input type='radio' value='high' name='Choo'> Haute 
+         <input type='radio' value='medium' name='Choo' CHECKED> Normale 
+         <input type='radio' value='low' name='Choo'> Faible
+      </td>
+	</tr>
+	<tr>
+		<td>
+			Sujet : 
+		</td>
+		<td>
+			<TEXTAREA rows='10' cols='50'  onFocus=\"if (this.value=='Entrez ici votre message') {this.value=''}\" 
+			name='mess'>Entrez ici votre message</TEXTAREA>
+		<td>
+	</tr>
+	<tr>
+		<td colspan='2'>
+			<center>
+			<INPUT type='hidden' name='envoyer' value='envoyer'>
+         <INPUT type='submit' value='Créer'>
+      </td>
+	</tr>
+</table>
+
+</form>

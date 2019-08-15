@@ -1,0 +1,49 @@
+<center>
+
+<a href="?mod=notes/note"><b>Retour</b></a>
+
+<h2>Editer une  note : </h2>
+
+</center>
+
+<br>
+<br>
+
+<form method='post' action='?mod=notes/nedit2'>
+
+<table>
+	<tr>
+		<td>
+			Sujet : 
+		</td>
+		<td>
+			<input type='text' value='{{sujet}}'  name='sujet' size='67'>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Priorité : 
+		</td>
+		<td>
+			<input type='radio' value='high' name='Choo' {{high}}> Haute 
+			<input type='radio' value='medium' name='Choo' {{medium}}> Normale 
+			<input type='radio' value='low' name='Choo' {{low}}> Faible
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Sujet : 
+		</td>
+		<td>
+			<TEXTAREA rows='10' cols='50' name='mess'>{{message}}</TEXTAREA>
+		<td>
+	</tr>
+	<tr>
+		<td colspan='2'>
+			<input type='hidden' value='{{idnote}}' name='id'>
+			<INPUT type='submit' value='Editer'>
+		</td>
+	</tr>
+</table>
+
+</form>

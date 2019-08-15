@@ -1,0 +1,27 @@
+<!-- DEBUT Modification votre avatar -->
+
+Vous pouvez modifier ici modifier votre avatar. 
+<br>
+<br>
+<form enctype='multipart/form-data' method='post' action='index.php?mod=profil2&miseenforme=1'>
+<table border='0'>
+
+<tr><td>
+Avatar:
+<br>
+Si vous connaissez un avatar stocké sur un URL: 
+<br>
+(<a href="http://www.google.fr/imghp" target="_blank">Biblioteque d'avatars</a>)
+<br>
+<input type="text" name="avatar" value="{{useravatar}}" size="50">
+
+{{upload_img}}
+
+</td>
+<td><img width="200px" src="'.{{useravatar}}.'">
+</td></tr>
+
+</table>
+<br><input type='submit' value='Valider'></form>
+
+<!-- FIN Modification votre avatar -->

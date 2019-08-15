@@ -1,0 +1,39 @@
+Known Bugs for Blacknova Classic Newest bugs at top, versions inserted at release dates
+nomenclature: REPORTED NEW VERIFIED(name) FIXED(name,date) POSTPONED IGNORED NONBUG - one of these should prefix every bug entry
+$Id: KNOWN_BUGS 63 2006-02-03 02:32:31Z phpfixer $
+
+FIXED(phpfixer,2006-02-02) in traderoutes.php, the submit for repeating traderoute results in "you cannot engage a non existent traderoute".
+
+FIXED(phpfixer,2006-01-18) in attack.php players can exploit the bounty code if they have emails with 'xenobe' contained in them-
+            need to not use strpos or stristr in the checks, need to make it check something a player cant modify.
+
+FIXED(phpfixer,2006-01-18) Log Report- Player *did* have pod, and did come back in SOL, despite this log entry
+        Combat lost!    January 18 2006 14:50:07
+        You ship is being attacked by BugStomper.
+        Try as you might, you cannot defend yourself against BugStomper's superior weaponry.
+        Your ship was destroyed.
+        You did not have an escape pod, you died.
+
+FIXED(phpfixer,2006-01-18) gen_score returns NULL when a player does *not* own a planet
+
+FIXED(phpfixer,2006-01-18) combat - bounty is placed despite attacker being smaller
+
+PENDING(phpfixer,2006-01-18) combat - player had escape pod, but was killed anyway and made "Dead-Dead"
+
+PENDING(phpfixer,2006-01-18) combat - log incorrect - recorded a skirmish but killed atatcker
+
+FIXED(partial)(phpfixer,2006-01-18) traderoutes on a 50x route breaks the html display at around route # 39 .. (broken html?)
+       Firefox browser doesnt render properly - traderoutes needs a total rewrite and templating, to be honest, anyways..
+FIXED(phpfixer,2006-01-18) Traderoutes allows creating trade route to a sector you have never been to.(known exploit)
+      never been to sector 17 , allowed me to create traderoute from 17 to 0    Port in 17   Organics    Port in 0   Special
+
+FIXED(phpfixer,2006-01-08) For Mysql 5 compatibility, several queries notably all with bnt_ships table updates and inserts need to have teh autoincrement field value '' changed to use NULL instead.
+Mysql differentiates between '' (empty) and NULL (\0 octal )
+
+FIXED(phpfixer,2006-01-08) Link in new member signup email incorrect, uses $game_domain  which includes the same cookie setting -
+        see here: http://.crazybri.net  note the . prefix . (this from bnt 0.50)
+
+NEW: In Xenobe_funcs, a negative value is occuring. The current workaround is a hardcoded set of variables. Must find source of bug and resolve.
+
+### Not all known bugs are in this new bug list - please add any you know or are not sure that have been fixed ###
+2006-01-08 START

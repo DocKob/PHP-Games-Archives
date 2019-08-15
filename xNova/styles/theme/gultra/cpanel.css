@@ -1,0 +1,132 @@
+@charset "utf-8";
+/**
+ _  \_/ |\ | /¯¯\ \  / /\    |¯¯) |_¯ \  / /¯¯\ |  |   |´¯|¯` | /¯¯\ |\ |5
+ ¯  /¯\ | \| \__/  \/ /--\   |¯¯\ |__  \/  \__/ |__ \_/   |   | \__/ | \|Core Redesigned Skin.
+ * @author: Copyright (C) 2011 by Brayan Narvaez (Prinick) developer of xNova Revolution
+ * This skin is stable on all pc browsers and all display resolutions
+ * @link: http://xnovarevforum.com.ar/
+ * Please do not remove the credits
+*/
+body
+{
+  color                : #CCEEFF;
+  margin-top           : 5px;
+  margin-left          : 10px;
+  background		:     #000 url(imagenes/bg.jpg) fixed no-repeat -16% -20px;
+  font-size            : 11px;
+  font-weight          : normal;
+  font-family          : Tahoma,sans-serif;
+}
+table {
+	background: url(imagenes/navegacion/bg_boxes.png);
+	padding: 5px 5px 5px 5px;
+	margin-top: 6px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+ table tr {
+	background: url(imagenes/navegacion/bg_boxes_2.png);
+}
+., #, td, th, table
+{
+  font-family	: Tahoma,sans-serif;
+  font-size	: 11px;
+  font-weight          : normal;
+}
+
+img
+{
+  border               : 0px;
+}
+
+ #menu 
+{
+  color: #CC3366;
+  width                : 150px;
+  height               : 652px;
+  position             : fixed !important;
+  left                 : 5px;
+  top                  : 0px;
+}
+
+form table th table input
+{
+  width: 60px;
+}
+
+th
+{
+  text-align           : center;
+  padding-left         : 3px;
+  padding-right        : 3px;
+}
+
+a
+{
+   color                : #66ccff;
+  text-decoration      : none;
+  font-weight          : normal;
+}
+
+a:hover
+{
+  color                : #CDD7F8;
+  text-decoration      : none;
+}
+
+ul {
+list-style: none;
+}
+select { 
+font-family: verdana; 
+font-size: 10px;
+color: #f2d999; 
+background:url(imagenes/navegacion/select-bg.png) repeat; 
+border: #2a2a2a solid 3px;
+} 
+textarea {
+width: 100%;
+padding: 2px 2px 2px 2px;
+font-size: 13px;
+color: #f2d999; 
+background:url(imagenes/navegacion/bg_boxes.png) repeat; 
+border: #2a2a2a solid 3px;
+}
+textarea:hover {
+padding: 2px 2px 2px 2px;
+font-size: 13px;
+color: #f2e7cc; 
+background:url(imagenes/navegacion/bg_boxes.png) repeat; 
+border: #2a2a2a solid 3px;
+}
+input {
+font-family: verdana; 
+font-size: 10px;
+color: #f2d999; 
+background:url(imagenes/navegacion/select-bg.png) repeat; 
+border: #2a2a2a solid 3px;
+}
+input:hover {
+font-family: verdana; 
+font-size: 10px;
+color: #f2e7cc; 
+background:url(imagenes/navegacion/select-bg.png) repeat; 
+border: #2a2a2a solid 3px;
+}
+img {
+border: none;
+}
+
+.tip {
+color: #fff;
+background:#1d1d1d;
+text-align: center;
+display:none;
+padding:3px 3px 3px 3px;
+position:absolute;    
+z-index:1000;
+max-width: 500px;
+}
+#content{overflow:visible !important;overflow:auto;}
+.tooltip, .tooltip_sticky { cursor: pointer; }

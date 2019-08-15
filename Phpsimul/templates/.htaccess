@@ -1,0 +1,12 @@
+#############################################
+##-- Acces protégé au fichier templates  --##
+#############################################
+
+
+# On bloque les fichiers *.html a tous acces exterieurs
+
+<FilesMatch "\.html$">
+	Order allow,deny
+	Allow from 127.0.0.1
+    Deny from all
+</FilesMatch>

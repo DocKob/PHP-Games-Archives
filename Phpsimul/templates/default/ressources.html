@@ -1,0 +1,26 @@
+
+<table>
+
+[[boucle]]
+
+<tr>
+	<td align='center'>
+		<img src='templates/{{theme}}/images/ressources/{{ressourceimage}}.gif'>
+	</td>
+	<td>
+		<b>{{ressourcenom}}</b>
+		<br>
+		<div id="{{idressource}}">
+			{{ressourcequantité}}
+		</div>
+
+		<script>
+			// Fonction permettant de mettre a jour les ressources en tant réel
+			ajouter_prod('{{idressource}}', '{{nombre_ressources_actuel}}', '{{prod_par_heure}}', '{{stockage_max}}');
+		</script>
+	</td>
+
+</tr>
+
+[[boucle]]
+

@@ -1,0 +1,193 @@
+<html>
+
+<head>
+	<title>
+		{{titre_jeu}}
+	</title>
+<!-- DEBUT DES SCRIPTS JavaScript -->
+
+<SCRIPT LANGUAGE="JavaScript" src="templates/{{theme}}/javascript.js"></script>
+
+<!-- FIN DES SCRIPTS JavaScript -->
+
+<!-- Entete D -->
+
+{{logo}}
+{{avertissement}}
+
+<link rel="stylesheet" type="text/css" href="templates/{{theme}}/style.css">
+
+</head>
+
+<!-- Entete F -->
+
+<body>
+
+<center>{{menu}}<br>
+
+<table border=0 valign='top' align='center' width='100%'><tr>
+
+<td width='15%' valign='top' align='center'>
+
+<!-- Debut Menu Ressources Planetes -->
+{{username}} ({{userrace}})<br>
+<a href="?mod=changelog" target="_blank">Version {{version}}</a>
+
+<br>
+
+<!-- DEBUT Affichages des bases -->
+
+<center>
+<img width='50' src='templates/{{theme}}/images/bases/{{baseimage}}.gif' border='0'>
+<br>
+<form method='post' action='http://{{formactionbases}}'>
+	<select name='idbase' onchange='this.form.submit();'>
+
+	{{selectbases}}
+
+	</select>
+</form>
+
+</center>
+
+<!-- FIN Affichage des bases -->
+
+<br>
+
+{{ressources}}<br>
+
+<tr>
+	<td>
+		
+	</td>
+	<td>
+		<b>Crédits :</b>
+		<br>
+		{{credits}}
+	</td>
+</tr>
+<tr>
+	<td>
+	
+	</td>
+	<td>
+		<b>Allopass :</b>
+		<br>
+		{{allopass}}
+	</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+{{partenaires}}
+<br>
+
+
+<a href="#" onclick="javascript:window.open('musique.php','World Country Music','width=400,height=600');">Musique</a>
+
+</td>
+<td valign="top">
+<!-- Fin Menu Ressources Planetes -->
+
+
+<!-- PHPSimul: Page a voir D -->
+<br>
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{page}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</center>
+<br>
+<!-- PHPSimul: page a voir F -->
+
+
+</td></tr></table></center>
+
+
+<foot>
+
+<!-- Debut pied de page -->
+
+<br><center><img src='templates/{{theme}}/images/barre.jpg'><br>
+
+{{nbconnect}}
+
+<br>
+Requêtes effectuées pour afficher la page : {{requetes_effectuees}}
+<br>
+Page générée en {{temps_gen}} secondes
+<br>
+
+<img src='templates/{{theme}}/images/barre.jpg'>
+
+<br>Ce jeu est basé sur le moteur <a href='http://forum.epic-arena.fr/' target='_blank'>PHPsimul</a>.</center>
+
+</foot>
+
+<!-- Fin pied de page -->
+
+</body>
+
+</html>

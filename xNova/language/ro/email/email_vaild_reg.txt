@@ -1,0 +1,21 @@
+Salut %1$s,<br>
+Multumesc pentru inregistrare in %2$s
+
+Inainte de a putea activa contul, este nevoie de un singur pas.
+De retinut ca acest pas este obligatoriu pentru a te putea inregistra.
+Trebuie sa mergi la linkul de mai jos numai o singura data pentru a putea verifica identitatea ta.
+
+Pentru a finaliza inregistrarea, te rog fa click pe urmatoarea adresa pentru activare:
+
+<a href='%3$sindex.php?page=reg&amp;mode=valid&amp;pseudo=%1$s&amp;clef=%4$s'>%3$sindex.php?page=reg&amp;mode=valid&amp;pseudo=%1$s&amp;clef=%4$s</a>
+
+Datele tale:
+
+Utilizator : %1$s
+Parola : %5$s
+
+In cazul unei probleme cu inregistrarea automatizata, te rog contacteaza cu webmasterul, 
+la urmatorul e-mail: <a href='mailto:%6$s'>%6$s</a>
+
+Salutari,
+%2$s - Team

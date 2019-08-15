@@ -1,0 +1,47 @@
+<!-- Page d'acceuil -->
+
+{{description_jeu}}
+
+<br>
+<br>
+
+{{connexion_form}}
+
+<br>
+<br>
+
+<!-- Affichage de la derniere news -->
+<center>La dernière news, posté le {{news_date2}} / {{news_date1}} / {{news_date0}} (<a href='index.php?mod=news'>Voir toutes les news</a>) : 
+<br>
+<table>
+	<tr>
+		<td align="center">
+			<font color="red">{{titre}}</font>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			{{message}}
+		</td>
+	</tr>
+</table>
+
+<br>
+<br>
+
+Les deux derniers screens (<a href='index.php?mod=screens'>Voir tous les screens</a>) : 
+<br>
+<table border=1>
+	<tr>
+		<td>
+			<a href='../templates/{{theme}}/images/screens/{{numeroscreen1}}.gif'>
+			<img src='../templates/{{theme}}/images/screens/{{numeroscreen1}}.gif' width='320' height='240'>
+			</a>
+		</td>        
+		<td>
+			<a href='../templates/{{theme}}/images/screens/{{numeroscreen2}}.gif'>
+			<img src='../templates/{{theme}}/images/screens/{{numeroscreen2}}.gif' width='320' height='240'>
+			</a>
+		</td>  
+	</tr>
+</table>

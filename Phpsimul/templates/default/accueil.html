@@ -1,0 +1,118 @@
+<!-- PHPsimul : Accueil D -->
+
+
+<!--
+
+On crée la fonction JS permettant d'afficher un compte a rebours pour les flottes.
+Fonction copié sur le site OGame de la GameForge, que nous remercions
+-->
+
+<!-- DEBUT Fonction JS compte a rebours -->
+
+<script>
+function t(){
+  v = new Date();
+  n = new Date();
+  o = new Date();
+  for (cn = 1; cn <= anz; cn++) {
+    volunites = document.getElementById(\'volunites\' + cn);
+    ss = volunites.title;
+    s = ss - Math.round((n.getTime() - v.getTime()) / 1000.);
+    m = 0;
+    h = 0;
+    if (s < 0) {
+      volunites.innerHTML = " - ";
+    } else {
+      if (s > 59) {
+	m = Math.floor(s/60);
+	s = s - m * 60;
+      }
+      if (m > 59) {
+	h = Math.floor(m / 60);
+	m = m - h * 60;
+      }
+      if (s < 10) {
+	s = "0" + s;
+      }
+      if (m < 10) {
+	m = "0" + m;
+      }
+      volunites.innerHTML = h + " H " + m + " Min " + s + "";
+    }
+    volunites.title = volunites.title - 1;
+  }
+  window.setTimeout("t(anz);", 999);
+}
+</script>
+
+<!-- FIN Fonction JS compte a rebours -->
+
+
+<center>
+<table border="0" width="100%">
+
+<tr>
+<td align="center">
+<br>
+<div id="dateheure"></div>
+Saint : <script src="templates/{{theme}}/javascript_affichage_saints.js"></script>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+{{messages}}
+</td>
+</tr>
+
+<tr>
+<td align="center">
+{{unites}}
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img width='200' src='templates/{{theme}}/images/bases/{{imagebase}}.gif' border='0'> 
+<br>
+{{controlrow_nom_base}} en cours : {{base_nom}} (<a href="?mod=optionsbase">Options</a>)
+<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+Coordonnées : <a href="?mod=map|{{ordre_1}}|{{ordre_2}}">{{coordonnees}}</a>
+<br>
+{{nom_cases}} : {{cases_utiliser}} / {{cases_max}} ( Libres : {{caseslibre}} )
+<br>
+
+<!-- DEBUT Affichage de la barre de pourcentages -->
+<!-- Créer par Nummi, ameliorer par Zorbox, tous deux membre du projet PHPSimul -->
+<!-- Pour telecharger d'autres barre, rendez vous sur http://forum.epic-arena.fr -->
+<table cellspacing='0' height='33' width='210' background='templates/{{theme}}/images/barres/01.png'>
+<tr>
+<td width='{{lon}}' background='templates/{{theme}}/images/barres/02.png'>
+<div id='pourcent'>
+<font color='white'><center><b><small>
+</small></b></center></font></div></td><td width='{{min}}'></td>
+</tr>
+</table>
+<!-- FIN Affichage de la barre de pourcentages -->
+
+Points : {{points}} 
+<br>
+Points des batiments : {{pointsbat}}
+<br>
+Points des recherches : {{pointsrech}}
+<br>
+Points des defenses & unités : {{pointsunitdef}}
+<br>
+Classement : {{classement}} / {{nb_inscrit}}
+</td>
+</tr>
+
+</table>
+</center>
+
+<!-- PHPsimul : Acceuil F -->

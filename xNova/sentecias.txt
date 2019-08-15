@@ -1,0 +1,15 @@
+ALTER TABLE `uni1_config`ADD`max_galaxy` tinyint (3) unsigned NOT NULL default '9';
+ALTER TABLE `uni1_config`ADD`max_system` smallint(5) unsigned NOT NULL default '400';
+ALTER TABLE `uni1_config`ADD`max_planets` tinyint (3) unsigned NOT NULL default '20';
+ALTER TABLE `uni1_config`ADD`planet_factor` float (2,1) NOT NULL default '1.0';
+ALTER TABLE `uni1_config`ADD`metal_start` int(11) unsigned NOT NULL default '500';
+ALTER TABLE `uni1_config`ADD`crystal_start` int(11) unsigned NOT NULL default '500';
+ALTER TABLE `uni1_config`ADD`deuterium_start` int(11) unsigned NOT NULL default '0';
+ALTER TABLE `uni1_config`ADD`norio_start` int(11) unsigned NOT NULL default '0';
+ALTER TABLE `uni1_config`ADD`darkmatter_start` int(11) unsigned NOT NULL default '0';
+ALTER TABLE `uni1_config`DROP`LastSettedGalaxyPos`;
+ALTER TABLE `uni1_config`DROP`LastSettedSystemPos`;
+ALTER TABLE `uni1_config`DROP`LastSettedPlanetPos`;
+ALTER TABLE `uni1_config`ADD`LastSettedGalaxyPos` tinyint (3) unsigned NOT NULL default '1';
+ALTER TABLE `uni1_config`ADD`LastSettedSystemPos` smallint (5) unsigned NOT NULL default '1';
+ALTER TABLE `uni1_config`ADD`LastSettedPlanetPos` tinyint (3) unsigned NOT NULL default '1';

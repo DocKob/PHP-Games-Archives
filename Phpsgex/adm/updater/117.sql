@@ -1,0 +1,3 @@
+ALTER TABLE `conf` ADD `cusr_pics` BOOLEAN NOT NULL DEFAULT FALSE AFTER `FLAG_RESLABEL`;
+
+UPDATE `conf` SET `sge_ver` = '118' WHERE `sge_ver` = '117';

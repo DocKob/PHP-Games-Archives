@@ -1,0 +1,35 @@
+
+<i>Actualisation du classement toutes les heures.</i>
+<br>
+<br>
+<table border='1'>
+<tr>
+	<td>
+		Afficher le classement des : 
+		<br>
+		<form method="post">
+			<SELECT NAME='classement' SIZE="1">
+			<OPTION VALUE=''>--- Selectionnez ---</option>
+			<option {{select_joueurs}} onclick="document.location='?mod=classement_joueurs';">Joueurs</option>
+			<option {{select_allis}} onclick="document.location='?mod=classement_allis';">Alliances</option>
+			</select>
+		</form>
+	</td>
+	<td>
+		Par  :
+		<br>
+		<form method="post">
+			<SELECT SIZE=1 NAME='type'>
+			<OPTION VALUE=''>--- Selectionnez ---</option>
+			<option {{general}} onclick="document.location='?mod=classement{{type}}&type=global';">Global</option>
+			<option {{batiments}} onclick="document.location='?mod=classement{{type}}&type=batiments';">Batiments</option>
+			<option {{recherches}} onclick="document.location='?mod=classement{{type}}&type=recherches';">Recherches</option>
+			<option {{unit}} onclick="document.location='?mod=classement{{type}}&type=unit';">Armées</option>
+			</select>
+		</form>
+	</td>
+</tr>
+</table>
+<br>
+
+

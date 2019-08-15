@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/1928/trunk/language/it/email
+END
+email_vaild_reg.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1928/trunk/language/it/email/email_vaild_reg.txt
+END
+email_reg_done.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1928/trunk/language/it/email/email_reg_done.txt
+END
+email_inactive.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1928/trunk/language/it/email/email_inactive.txt
+END
+email_lost_password.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1928/trunk/language/it/email/email_lost_password.txt
+END

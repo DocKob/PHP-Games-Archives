@@ -1,0 +1,100 @@
+<!-- Affichage de la carte galactique -->
+
+<!-- Remerciment a Guerrier & Max485 pour le code -->
+
+<!-- DEBUT Fonction JS permettant d'afficher une infobulle -->
+	<script language="javascript" type="text/javascript">
+		<!--
+		var Mouse;
+		document.onmousemove = DoMouse;
+		function DoMouse(e) 
+		{
+			Mouse = (typeof e == 'undefined') ? window.event : e;
+		}
+
+		function montre(id) // Permet d'afficher une infobulle
+		{
+			var Infobulle = document.getElementById('infobulle-'+id) // On recupere l'infobulle avec l'id demandé
+			if(Infobulle) // Dans le cas ou l'infobulle existe
+			{
+				Infobulle.style.visibility = 'visible'; // On la rend visible
+				
+				if(document.documentElement.clientWidth > 0) 
+				{
+					Infobulle.style.left=20+event.x+document.documentElement.scrollLeft+"px";
+					Infobulle.style.top=10+event.y+document.documentElement.scrollTop+"px";
+				} 
+				else 
+				{
+					Infobulle.style.left=20+event.x+document.body.scrollLeft+"px";
+					Infobulle.style.top=10+event.y+document.body.scrollTop+"px";
+				}
+			}
+			
+			document.onmousemove=move; 
+		}
+
+		function cache(id) // Permet de cacher l'infobulle apres le temps defini dans la fonction
+		{
+			setTimeout('docache('+id+')', 3000); // Si vous désirez que votre infobulle reste affichée un certain moment ( ici, 3000 milliseconde, soit 3 secondes )
+		}
+		
+		function docache(id) // Permet de cacher l'infobulle immediatement
+		{
+			var Infobulle = document.getElementById('infobulle-'+id)
+			if(Infobulle) 
+			{
+				Infobulle.style.visibility = 'hidden';
+			}
+			
+			document.onmousemove=move;
+		}
+	//-->
+	</script> 
+<!-- FIN Fonction JS permettant d'afficher une infobulle -->
+
+<!-- DEBUT CSS pour l'infobulle -->		
+	<style type="text/css">
+		.infobulle
+		{
+			position: absolute;    
+			visibility : hidden;
+			border: 2px solid white;
+			padding: 10px;
+			font-family: Verdana, Arial;    /* Définissez ici la police de votre Infobulle */
+			font-size: 14px;   			    /* Définissez ici la taille de votre Infobulle */
+			background-color: #000000;      /* Si vous ne mettez pas de fond d'écran dans votre infobulle, cela sera la couleur d'arrière plan */
+			background-image: url(templates/default/images/bulle.png);     /* Vous pouvez ici définir une couleur d'arrière plan pour votre infobulle */
+			width : 200px;                  /* La largeur de votre infobulle */
+		}
+	</style> 
+<!-- FIN CSS pour l'infobulle -->
+
+<!-- DEBUT Affichage de la zone de changement de galaxie et systeme -->
+
+Galaxie :    
+<select name="ordre_1_select">		
+	{{options_ordre_1}}
+</select>
+
+</select>
+- Systeme : 
+<select name="ordre_2_select">
+	{{options_ordre_2}}
+</select>
+
+<!-- FIN Affichage de la zone de changement de galaxie et systeme -->
+
+<!-- Affichage de la carte -->
+
+<table width="900" border="0" cellspacing="0" cellpadding="0" align="center" height="900"> 
+	<tr align="center" valign="middle" height="0">
+	
+
+
+
+
+
+
+
+ 

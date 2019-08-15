@@ -1,0 +1,61 @@
+@charset "utf-8";
+/**
+ _  \_/ |\ | /¯¯\ \  / /\    |¯¯) |_¯ \  / /¯¯\ |  |   |´¯|¯` | /¯¯\ |\ |5
+ ¯  /¯\ | \| \__/  \/ /--\   |¯¯\ |__  \/  \__/ |__ \_/   |   | \__/ | \|Core Redesigned Skin.
+ * @author: Copyright (C) 2011 by Brayan Narvaez (Prinick) developer of xNova Revolution
+ * This skin is stable on all pc browsers and all display resolutions
+ * @link: http://xnovarevforum.com.ar/
+ * Please do not remove the credits
+*/
+
+*{padding: 0; margin: 0;}
+
+body {
+background: #000 url(imagenes/bg.jpg) no-repeat -1% 10% fixed;
+text-align: center;
+font-family: Verdana, Arial;
+font-weight: blod;
+font-size: 10px;
+color: #cccccc;
+margin:0;
+padding:0;
+margin-top:0px;
+margin-left:0px;
+height:100%;
+width:100%;
+overflow: auto;
+}
+
+td.merecidas {
+border:2px solid #2a2a2a;  
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+padding-left:3px;
+padding-right:3px;
+text-align:center;
+background:url(imagenes/navegacion/bg_boxes.png) repeat;
+}
+
+.content {
+padding-bottom:26px;
+margin-left:205px;
+margin-top:10px;
+width:80%!important
+}
+
+.tooltip, .tooltip_sticky { cursor: pointer; }
+.tip {
+color: #fff;
+/*background:#1d1d1d;*/
+background:url(imagenes/navegacion/bg_boxes.png);
+border: 2px solid #1d1d1d;
+text-align: center;
+font-weight: bold;
+display:none;
+padding:3px 3px 3px 3px;
+position:absolute;    
+z-index:1000;
+max-width: 500px;
+}
+

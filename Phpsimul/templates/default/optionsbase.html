@@ -1,0 +1,17 @@
+<form method='post' action='?mod=optionsbase'>
+Options de votre {{controlrow_nom_bases}} {{base_joueur}} {{coordonnees}} : 
+
+<br>
+<br>
+
+Renommer votre {{controlrow_nom_bases}} : 
+<input type='text' name='nom' maxlength='10' value='{{base_joueur}}'>
+<input type='submit' value='Renommer'></form>
+
+<br>
+<font color='red' size='+1'><b>
+{{error}}
+</b></font>
+<br>
+<a class="lien" onclick="document.location='?mod=optionsbase&action=abandon_colonie';">
+<span class='abandon_colonie'>Abandonner votre {{controlrow_nom_bases}}</span></a>

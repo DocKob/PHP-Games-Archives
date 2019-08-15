@@ -1,0 +1,200 @@
+<center>
+
+<!-- Script Java pour empecher la saisie de lettres dans le champ Heures de la page -->
+<script language="Javascript">
+/* Pour faire une vérification sans autoriser le point ("."), suivez les instructions qui sont écrites en commentaire */
+function verif_nombre(champ)
+{
+	var chiffres = new RegExp("[0-9\.]"); /* Modifier pour : var chiffres = new RegExp("[0-9]"); */
+	var verif;
+	var points = 0; /* Supprimer cette ligne */
+	for(x = 0; x < champ.value.length; x++)
+	{
+		verif = chiffres.test(champ.value.charAt(x));
+		if(champ.value.charAt(x) == "."){points++;} /* Supprimer cette ligne */
+		if(points > 1){verif = false; points = 1;} /* Supprimer cette ligne */
+		if(verif == false){champ.value = champ.value.substr(0,x) + champ.value.substr(x+1,champ.value.length-x+1); x--;}
+	}
+}
+</script>
+
+
+<table width="618" border="1" cellspacing="0" cellpadding="2" bordercolor="#000000" style="font-family:trebuchet ms,sans-serif; font-size: 9pt ;">
+	<tr>
+		<td colspan="7" align="left">
+			Facteur de production : {facteur_production}
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<b>
+			Production par heures :
+			</b>
+		</td>
+		{nom_ressources id=1}
+			<td align="center">
+				{nom_ressources}
+			</td>
+		{/nom_ressources}
+		<td align="center">
+			{nom->energie}
+		</td>
+		<td align="center">
+			Etats
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center">
+			Production de depart
+		</td>
+		{afficher_prod_depart id=1}
+			<td align="center">
+				{afficher_prod_depart}
+			</td>
+		{/afficher_prod_depart}
+		<td align="center">
+			{prod_depart->energie}
+		</td>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+
+	<tr>
+		<td align="center">
+			Production des mines
+		</td>
+		{afficher_prod_mines id=1}
+			<td align="center">
+				{afficher_prod_mines}
+			</td>
+		{/afficher_prod_mines}
+		<td align="center">
+			{conso_energie}
+		</td>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center">
+			Augmentation par recherches
+		</td>
+		{augmentation_par_recherches id=1}
+			<td align="center">
+				{augmentation_par_recherches} %
+			</td>
+		{/augmentation_par_recherches}
+		<td align="center">
+			&nbsp;
+		</td>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center">
+			Total de la prodution
+		</td>
+		{prod_total id=1}
+			<td align="center">
+				{prod_total}
+			</td>
+		{/prod_total}
+		<td align="center">
+			{total_prod->energie}
+		</td>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+
+	<tr>
+		<td align="center">
+			Total production en {temps_prod_afficher}
+		</td>
+		{prod_total_enX id=1}
+			<td align="center">
+				{prod_total_enX}
+			</td>
+		{/prod_total_enX}
+		<td align="center">
+			&nbsp;
+		</td>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center">
+			Capacité de stockage
+		</td>
+		{stockage id=1}
+		<td align="center">
+			{stockage}
+		</td>
+		{/stockage}
+		<td align="center">
+			&nbsp;
+		</td>
+		<td align="center">
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td colspan="{colspan_total}">
+			<form action='?mod=stats_prod' method='post'>
+				Production en <input type='text' maxlength='3' size='1' name='temps_prod' value='{temps_prod}' onkeyup='verif_nombre(this)' ; > H
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='submit' value='Voir'>
+			</form>		
+		</td>
+	</tr>
+</table>
+
+
+<br>
+<br>
+<br>
+
+
+<table>
+		{afficher_stock_barre id=1}
+		<tr>
+			<td>	
+				{nom_ressources}
+			</td>
+		</tr>
+		<tr>
+			<td colspan='2' align="center">
+				<table cellspacing='0' height='33' width='210'  background='templates/{user_template}/images/barres/01.png'>
+					<tr>
+						<td align="center" valign="top" width='{barre_rempli_width}%' background='templates/{user_template}/images/barres/02.png'>
+							<font color='white' size='-3'>
+								<b>
+									{barre_pourcent_affichage} %
+								</b>
+							</font>
+						</td>
+						<td width='{barre_vide_width}%'>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	{/afficher_stock_barre}
+</table>
+
+{calculette}
+
+
+
+
+
+
+
+
